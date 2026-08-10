@@ -20,6 +20,7 @@ async def main() -> None:
     db_manager = DatabaseManager(db_url)
 
     try:
+        await db_manager.init_db()
         data = await db_manager.get_aggregated_data()
         
         if not data:
