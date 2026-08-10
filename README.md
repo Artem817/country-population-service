@@ -5,7 +5,7 @@
 ## Technology Stack
 
 - Python 3.11
-- Asyncio
+- asyncio
 - SQLAlchemy Async ORM
 - asyncpg
 - PostgreSQL 15
@@ -32,17 +32,28 @@
     ├── base.py
     ├── factory.py
     └── wiki.py
+````
 
-### Start with default source (Wikipedia))
+## Usage
+
+### Start with the default source (Wikipedia)
+
 ```bash
 docker-compose up get_data
 docker-compose up print_data
+```
 
-### Launch with additional source (StatisticsTimes)
+### Launch with an additional source (StatisticsTimes)
+
 ```bash
 DATA_SOURCE=stats docker-compose up get_data
 docker-compose up print_data
+```
 
-### Run tests using pytest:
+## Testing
+
+Run tests using pytest:
+
 ```bash
 python -m pytest tests/ -v
+```
