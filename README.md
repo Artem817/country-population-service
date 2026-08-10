@@ -50,6 +50,9 @@ DATA_SOURCE=stats docker-compose up get_data
 docker-compose up print_data
 ```
 
+> **Note regarding `stats` source:**
+> You may have connection issues with this site. I recommend testing it in **GitHub Codespaces**, where network routing easily bypasses these regional restrictions.
+
 ## Testing
 
 Run tests using pytest:
