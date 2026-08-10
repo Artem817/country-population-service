@@ -1,6 +1,6 @@
 from scrapers.base import BaseScraper
 from scrapers.wiki import WikiScraper
-# from scrapers.stats_times import StatsTimesScraper # розкоментую коли додам StatsTimesScraper
+from scrapers.stats_times import StatsTimesScraper 
 
 class ScraperFactory:
     """Factory class to instantiate the appropriate scraper based on source name."""
@@ -22,8 +22,8 @@ class ScraperFactory:
         
         if source_name == "wiki":
             return WikiScraper()
-        # elif source_name == "stats":
-        #     return StatsTimesScraper()
+        elif source_name == "stats":
+            return StatsTimesScraper()
         else:
             raise ValueError(f"Unknown data source requested: {source_name}")
         
