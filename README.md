@@ -25,13 +25,16 @@
 ├── get_data.py
 ├── logger.py
 ├── models.py
-├── note.txt
 ├── print_data.py
 ├── requirements.txt
-└── scrapers
-    ├── base.py
-    ├── factory.py
-    └── wiki.py
+├── scrapers
+│   ├── base.py
+│   ├── factory.py
+│   ├── stats_times.py
+│   └── wiki.py
+└── tests
+    ├── test_factory.py
+    └── test_scrapers.py
 ````
 
 ## Usage
