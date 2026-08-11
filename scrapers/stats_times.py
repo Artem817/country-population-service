@@ -32,7 +32,7 @@ class StatsTimesScraper(BaseScraper):
 
             country = name_cells[0].get_text(" ", strip=True)
             region = name_cells[1].get_text(" ", strip=True) if len(name_cells) > 1 else None
-            raw_population = data_cells[0].get_text(strip=True)
+            raw_population = data_cells[1].get_text(strip=True)
 
             if not country or country.lower() == "world":
                 continue
